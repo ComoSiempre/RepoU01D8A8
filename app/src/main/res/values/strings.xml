@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">U01D8A8</string>
+    <string name="tx_titulo">Sistema de Registro de Asistencia y Tiempo\nPresente su Tarjeta</string>
+    <string name="tx_IniJor">Inicio de Jornada</string>
+    <string name="tx_IniPau">Inicio de Pausa</string>
+    <string name="tx_TerJor">Termino de Jornada</string>
+    <string name="tx_TerPau">Termino de Pausa</string>
+    <string name="tx_tituloFirst">Configuracion Dispositivo</string>
+    <string name="tx_idPort">Ingresar la ID de portico</string>
+    <string name="tx_ipBD">Ingresar la IP de la base de datos</string>
+    <string name="tx_ipWS">Ingresar la IP del webservice</string>
+    <string name="tx_cancel">Cancelar</string>
+    <string name="tx_iniciate">Iniciar</string>
+
+
+</resources>

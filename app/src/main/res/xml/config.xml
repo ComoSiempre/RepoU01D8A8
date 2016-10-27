@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<parametros>
+  <Url_WebServices>http://10.0.167.27/MRAT_UQA/U021E30.asmx</Url_WebServices>
+  <Id_Portico>G040D99A5</Id_Portico>
+  <Base_Datos_IP>10.0.167.55</Base_Datos_IP>
+  <Tiene_Chapa>Z0B9C4C</Tiene_Chapa>
+  <Disposicion>Z0B994E</Disposicion>
+  <Id_Crede_administrador>FEF94097</Id_Crede_administrador>
+  <Localizacion_Geografica>-23.6553434317698 -70.39867470014138</Localizacion_Geografica>
+
+</parametros>

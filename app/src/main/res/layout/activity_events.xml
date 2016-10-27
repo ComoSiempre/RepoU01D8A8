@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_events"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.civi.Activities.EventsActivity"
+    android:background="@drawable/geo">
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="216dp"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="33dp"
+        android:id="@+id/TV_NombrePersona" />
+
+    <Button
+        android:text="@string/tx_IniJor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="61dp"
+        android:id="@+id/BT_IniJor"
+        android:layout_below="@+id/TV_NombrePersona"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="30sp" />
+
+    <Button
+        android:text="@string/tx_TerPau"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/BT_TermPau"
+        android:layout_below="@+id/BT_IniJor"
+        android:layout_alignLeft="@+id/BT_IniJor"
+        android:layout_alignStart="@+id/BT_IniJor"
+        android:layout_marginTop="69dp"
+        android:textSize="30sp" />
+
+    <Button
+        android:text="@string/tx_TerJor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/BT_TermJor"
+        android:layout_alignBaseline="@+id/BT_TermPau"
+        android:layout_alignBottom="@+id/BT_TermPau"
+        android:layout_alignRight="@+id/BT_IniPau"
+        android:layout_alignEnd="@+id/BT_IniPau"
+        android:textSize="30sp" />
+
+    <Button
+        android:text="@string/tx_IniPau"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="21dp"
+        android:layout_marginEnd="21dp"
+        android:id="@+id/BT_IniPau"
+        android:textSize="30sp"
+        android:layout_alignTop="@+id/BT_IniJor"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

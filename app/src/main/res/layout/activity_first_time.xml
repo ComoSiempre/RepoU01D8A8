@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_first_time"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.civi.Activities.FirstTimeActivity"
+    android:background="@drawable/first">
+
+    <TextView
+        android:text="@string/tx_tituloFirst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TV_TituloFirst"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/background_light"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayoutBotonera">
+
+        <Button
+            android:text="@string/tx_iniciate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/BT_IniciarConf"
+            android:layout_toLeftOf="@+id/ET_IPBD"
+            android:layout_toStartOf="@+id/ET_IPBD"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="@string/tx_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/BT_Cancelar"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TV_TituloFirst"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="43dp"
+        android:id="@+id/LinearLayoutDatos">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TIL_IPBD"
+            android:textColorHint="@color/colorLetters">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/tx_ipBD"
+                android:id="@+id/ET_IPBD"
+                android:layout_marginTop="35dp"
+                android:layout_weight="1"
+                android:layout_below="@+id/TIL_IPWS"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="?attr/colorBackgroundFloating"
+                android:textColorHint="@android:color/background_light"
+                android:text="10.0.167.55" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TIL_IPWS"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColorHint="@color/colorLetters">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/tx_ipWS"
+                android:id="@+id/ET_IPWS"
+                android:layout_weight="1"
+                android:textColor="?attr/colorBackgroundFloating"
+                android:textColorHint="@android:color/background_light"
+                android:text="http://www.opendat.cl/umbral_ws/U02916C.asmx"/>
+        </android.support.design.widget.TextInputLayout>
+        <!--android:text="http://www.opendat.cl/umbral/ayt/U021E30.asmx"-->
+        <!--android:text="http://10.0.167.27/MRAT_UQA/U021E30.asmx"-->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TV_TituloFirst"
+            android:layout_marginTop="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/TIL_IDPortico"
+            android:textColorHint="@color/colorLetters">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ET_IDPortico"
+                android:hint="@string/tx_idPort"
+                android:layout_weight="1"
+                android:textColor="?attr/colorBackgroundFloating"
+                android:textColorHint="@android:color/background_light"
+                android:text="G040D9AF4" />
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/online_icon"
+        android:id="@+id/IV_FaroConectionFT"
+        android:layout_marginBottom="225dp"
+        android:layout_alignBottom="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="772dp"
+        android:layout_marginStart="772dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/IV_FaroConectionFT"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/LinearLayoutProgress">
+
+        <ProgressBar
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/PB_Loading"
+            android:indeterminate="true"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</RelativeLayout>
